@@ -13,3 +13,9 @@ def cargar_centros():
     except FileNotFoundError:
         pass
     return centros
+
+def guardar_centros(centros):
+    with open("data/centros.txt", "w", encoding="utf-8") as f:
+        for c in centros:
+            linea = f"{c['id']},{c['nombre']},{c['region']},{c['subregion']}\n"
+            f.write(linea)
