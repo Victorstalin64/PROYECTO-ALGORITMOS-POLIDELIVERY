@@ -65,3 +65,8 @@ def menuAdministrador(centros):
             guardar_centros(centros)
         elif op == "6":
             break
+from utils.ordenamientos import burbuja
+
+def listar_centros_ordenados(centros):
+    burbuja(centros)
+    listar_centros(centros)
