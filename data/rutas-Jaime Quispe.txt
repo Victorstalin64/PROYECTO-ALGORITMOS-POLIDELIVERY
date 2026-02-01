@@ -1,0 +1,2 @@
+Ruta seleccionada: C1 -> C2 -> C3
+Costo total: 15
