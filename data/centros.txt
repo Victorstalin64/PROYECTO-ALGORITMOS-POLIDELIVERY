@@ -1,4 +1,0 @@
-C1,Centro Norte,Norte,Quito
-C2,Centro Sur,Sur,Quito
-C3,Centro Valle,Valle,Tumbaco
-
