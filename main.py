@@ -17,16 +17,24 @@ def main():
         print("\n--- BIENVENIDO A POLIDELIVERY ---")
         print("1. Administrador")
         print("2. Cliente")
-        print("3. Registro cliente")
-        print("4. Salir")
-        op = input("Opción: ")
-        if op == "1":
+        print("3. Salir")
+        opcion = input("Opción: ")
+        if opcion == "1":
             menuAdministrador(centros)
-        elif op == "2":
-            menu_cliente(grafo, centros)
-        elif op == "3":
-            registro()
-        elif op == "4":
+        elif opcion == "2":
+            while True:
+                print("\n--- MENÚ CLIENTE ---")
+                print("1. Iniciar sesión")
+                print("2. Registrarse")
+                print("3. Volver al menú principal")
+                opcion_cliente = input("Opción: ")
+                if opcion_cliente == "1":
+                    menu_cliente(grafo, centros)
+                elif opcion_cliente == "2":
+                    registro()
+                elif opcion_cliente == "3":
+                    break
+        elif opcion == "3":
             break
         else:
             print("Opción inválida")
