@@ -50,5 +50,5 @@ def guardar_usuario(usuario):
 def guardar_ruta_cliente(nombre_cliente, ruta, costo):
     nombre_archivo = f"data/rutas-{nombre_cliente}.txt"
     with open(nombre_archivo, "w", encoding="utf-8") as f:
-        f.write(f"Ruta seleccionada: {' -> '.join(ruta)}\n")
+        f.write(f"Ruta seleccionada:{' -> '.join(ruta)}\n")
         f.write(f"Costo total: {costo}\n")
