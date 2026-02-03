@@ -1,17 +1,11 @@
 from admin import menuAdministrador
-from cliente import registro, menu_cliente
+from cliente import registro, menu_cliente, grafos
 from data_manager import cargar_centros
 
 
 def main():
     centros = cargar_centros()
-
-    # Grafo de prueba (ID de centros con costos) esto es un ejemplo ñaño, valores quemados costos porque si
-    grafo = {
-        "C1": {"C2": 10, "C3": 20},
-        "C2": {"C1": 10, "C3": 5},
-        "C3": {"C1": 20, "C2": 5}
-    }
+    grafo = grafos()
 
     while True:
         print("\n--- BIENVENIDO A POLIDELIVERY ---")

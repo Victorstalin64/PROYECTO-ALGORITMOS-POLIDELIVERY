@@ -34,8 +34,16 @@ def login_clientes():
     print("Credenciales incorrectas")
     return None
 
+def grafos():
+        return {
+        "C1": {"C2": 10, "C3": 20},
+        "C2": {"C1": 10, "C3": 5},
+        "C3": {"C1": 20, "C2": 5}
+    }
+
 def menu_cliente(grafo, centros):
     cliente = login_clientes()
+    grafo = grafos()
     if not cliente:
         return
     seleccion = []
