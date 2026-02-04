@@ -1,10 +1,15 @@
+# Importación del método de ordenamiento burbuja
 from utils.ordenamientos import burbuja
+# Importación del método de búsqueda lineal
 from utils.busquedas import busqueda_lineal
+# Importación de la función para guardar centros en archivo
 from data_manager import guardar_centros
 #Muchachos organice un poco todo en general y los deje arriba, modifique un poco el menu y agregue una opción más
 
+# Archivo donde se almacenan los centros de distribución
 CENTROS_FILE = "data/centros.txt"
-
+# Permite registrar un nuevo centro de distribución
+# Verifica que el ID no esté repetido antes de agregarlo
 def agregar_centro(centros):
     print("\n--- AGREGAR CENTRO ---")
     id = input("ID: ")
